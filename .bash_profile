@@ -3,12 +3,13 @@ export LESS="-X"
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
+export PATH="$HOME/bin:$PATH"
 
-# Look for system-wide go, otherwise assume in homedir
+# Look for system-wide go, otherwise in home dir under mercurial dir
 if [ -e "/usr/local/go" ]; then
     export GOROOT="/usr/local/go"
 else
-    export GOROOT="/home/bseitz/hg/go"
+    export GOROOT="$HOME/hg/go"
 fi
 export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current"
 export GOMAXPROCS=10
@@ -23,3 +24,4 @@ alias sup='svn update --ignore-externals'
 alias more='less'
 alias rpmfu='sudo rpm -ivh --replacepkgs --replacefiles'
 alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
+alias vi='vim'
