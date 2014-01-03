@@ -3,7 +3,6 @@ export LESS="-X"
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
-export PATH="$HOME/bin:$PATH"
 
 # Look for system-wide go, otherwise in home dir under mercurial dir
 if [ -e "/usr/local/go" ]; then
@@ -11,7 +10,10 @@ if [ -e "/usr/local/go" ]; then
 else
     export GOROOT="$HOME/hg/go"
 fi
-export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current"
+export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current:$HOME/Dropbox/algo"
+
+export PATH="$HOME/bin:$PATH:$HOME/inst/go/bin"
+
 export GOMAXPROCS=10
 
 alias ack='ack -a -i --follow'
