@@ -10,7 +10,7 @@ if [ -e "/usr/local/go" ]; then
 else
     export GOROOT="$HOME/hg/go"
 fi
-export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current:$HOME/Dropbox/algo"
+export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current:$HOME/Dropbox/algo:$HOME/git"
 
 export PATH="$HOME/bin:$PATH:$HOME/inst/go/bin"
 
