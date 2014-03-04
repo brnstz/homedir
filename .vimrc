@@ -20,7 +20,6 @@ set autoindent
 set smartindent
 set ignorecase
 set smartcase
-"set background=light
 set backspace=indent,eol,start
 set ruler
 set t_Co=256
@@ -30,6 +29,7 @@ au BufNewFile,BufRead *.in set filetype=javascript
 au BufNewFile,BufRead *.ctxlib set filetype=javascript
 au BufNewFile,BufRead *.ctp set filetype=php
 set background=dark
+"set background=light
 set encoding=utf8
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let g:SuperTabDefaultCompletionType = "context"

@@ -11,7 +11,14 @@ if [ -e "/usr/local/go" ]; then
 else
     export GOROOT="$HOME/hg/go"
 fi
-export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current"
+export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current:$HOME/Dropbox/algo:$HOME/git"
+
+export PATH="$HOME/bin:$PATH:$HOME/inst/go/bin"
+
+export DYLD_LIBRARY_PATH=$HOME/inst/instantclient_11_2
+export TNS_ADMIN=$HOME/inst/instantclient_11_2
+export PATH="$HOME/inst/instantclient_11_2:$PATH"
+
 export GOMAXPROCS=10
 
 alias ack='ack -a -i --follow'
