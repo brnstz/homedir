@@ -3,7 +3,7 @@ export LESS="-X"
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Look for system-wide go, otherwise in home dir under mercurial dir
 if [ -e "/usr/local/go" ]; then
