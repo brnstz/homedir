@@ -20,8 +20,10 @@ export TNS_ADMIN=$HOME/inst/instantclient_11_2
 export PATH="$HOME/inst/instantclient_11_2:$PATH"
 
 export GOMAXPROCS=10
+export LESS="-R"
 
-alias ack='ack -a -i --follow'
+#alias ack='ack -a -i --follow'
+alias ack='ack -i --follow --ignore-dir=dist'
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 bind 'set match-hidden-files off'
