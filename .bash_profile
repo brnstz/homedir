@@ -11,7 +11,7 @@ if [ -e "/usr/local/go" ]; then
 else
     export GOROOT="$HOME/hg/go"
 fi
-export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current:$HOME/Dropbox/algo:$HOME/git"
+export GOPATH="$HOME/inst/go:$HOME/git/paperboy-go:$HOME/Dropbox/algo:$HOME/git"
 
 export PATH="$HOME/bin:$PATH:$HOME/inst/go/bin"
 
@@ -22,7 +22,7 @@ export PATH="$HOME/inst/instantclient_11_2:$PATH"
 export GOMAXPROCS=10
 export LESS="-RX"
 
-alias ack='ack -i --follow --ignore-dir=dist'
+alias ack='ack -i --follow --ignore-dir=dist --ignore-dir=bower_components --ignore-dir=node_modules'
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 bind 'set match-hidden-files off'
