@@ -1,5 +1,4 @@
 umask 002
-export LESS="-X"
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
