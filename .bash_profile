@@ -3,6 +3,7 @@ export LESS="-X"
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
+export PATH="$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Look for system-wide go, otherwise in home dir under mercurial dir
 if [ -e "/usr/local/go" ]; then
@@ -10,7 +11,7 @@ if [ -e "/usr/local/go" ]; then
 else
     export GOROOT="$HOME/hg/go"
 fi
-export GOPATH="$HOME/inst/go:$HOME/svn/email-platform/go/branches/current:$HOME/Dropbox/algo:$HOME/git"
+export GOPATH="$HOME/inst/go:$HOME/git/paperboy-go-common:$HOME/Dropbox/algo:$HOME/git"
 
 export PATH="$HOME/bin:$PATH:$HOME/inst/go/bin"
 
@@ -19,8 +20,9 @@ export TNS_ADMIN=$HOME/inst/instantclient_11_2
 export PATH="$HOME/inst/instantclient_11_2:$PATH"
 
 export GOMAXPROCS=10
+export LESS="-RX"
 
-alias ack='ack -a -i --follow'
+alias ack='ack -i --follow --ignore-dir=dist --ignore-dir=bower_components --ignore-dir=node_modules'
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 bind 'set match-hidden-files off'
