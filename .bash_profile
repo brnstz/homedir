@@ -31,3 +31,7 @@ alias more='less'
 alias rpmfu='sudo rpm -ivh --replacepkgs --replacefiles'
 alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
+alias nb='ipython notebook --pylab inline'
+
+# added by Anaconda 1.8.0 installer
+export PATH="/Users/bseitz/anaconda/bin:$PATH"
