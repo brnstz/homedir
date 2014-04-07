@@ -24,6 +24,10 @@ export LESS="-RX"
 alias ack='ack -i --follow --ignore-dir=dist --ignore-dir=bower_components --ignore-dir=node_modules'
 export HISTFILESIZE=10000
 export HISTSIZE=10000
+
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 bind 'set match-hidden-files off'
 alias spe='svn propedit svn:externals'
 alias spg='svn propget svn:externals'
