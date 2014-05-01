@@ -11,10 +11,9 @@ if [ -e "/usr/local/go" ]; then
 else
     export GOROOT="$HOME/hg/go"
 fi
-#export GOPATH="$HOME/inst/go:$HOME/git/paperboy-go-common:$HOME/Dropbox/algo:$HOME/git"
 export GOPATH="$HOME/go"
 
-export PATH="$HOME/bin:$PATH:$HOME/inst/go/bin"
+export PATH="$GOPATH/bin:$HOME/bin:$PATH"
 
 export DYLD_LIBRARY_PATH=$HOME/inst/instantclient_11_2
 export TNS_ADMIN=$HOME/inst/instantclient_11_2
