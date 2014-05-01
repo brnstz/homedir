@@ -1,5 +1,4 @@
 umask 002
-export LESS="-X"
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
@@ -25,6 +24,10 @@ export LESS="-RX"
 alias ack='ack -i --follow --ignore-dir=dist --ignore-dir=bower_components --ignore-dir=node_modules'
 export HISTFILESIZE=10000
 export HISTSIZE=10000
+
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 bind 'set match-hidden-files off'
 alias spe='svn propedit svn:externals'
 alias spg='svn propget svn:externals'
@@ -33,3 +36,7 @@ alias more='less'
 alias rpmfu='sudo rpm -ivh --replacepkgs --replacefiles'
 alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
+alias nb='ipython notebook --pylab inline'
+
+# added by Anaconda 1.8.0 installer
+export PATH="/Users/bseitz/anaconda/bin:$PATH"
