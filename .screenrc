@@ -1,2 +1,3 @@
 termcapinfo xterm ti@:te@
 escape ^jj
+defshell -bash   
