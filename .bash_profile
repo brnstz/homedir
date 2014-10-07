@@ -11,8 +11,7 @@ else
     export GOROOT="$HOME/hg/go"
 fi
 export GOPATH="$HOME/go"
-export NYTGO="$GOPATH/src/github.com/nytm/paperboy-go-common"
-export PB="github.com/nytm/paperboy-go-common"
+export NYTGO="$GOPATH/src/github.com/nytm"
 
 export PATH="$GOPATH/bin:$HOME/bin:$PATH"
 
@@ -44,3 +43,6 @@ alias g="cd $NYTGO"
 
 # added by Anaconda 1.8.0 installer
 export PATH="/Users/bseitz/anaconda/bin:$PATH"
+
+
+source /opt/nyt/sbx/.nyt
