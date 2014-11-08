@@ -4,17 +4,10 @@ export PAGER="less"
 export EDITOR="vim"
 export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Look for system-wide go, otherwise in home dir under mercurial dir
-if [ -e "/usr/local/go" ]; then
-    export GOROOT="/usr/local/go"
-else
-    export GOROOT="$HOME/hg/go"
-fi
 export GOPATH="$HOME/go"
-export NYTGO="$GOPATH/src/github.com/nytm/paperboy-go-common"
-export PB="github.com/nytm/paperboy-go-common"
+export NYTGO="$GOPATH/src/github.com/nytm"
 
-export PATH="$GOPATH/bin:$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 export DYLD_LIBRARY_PATH=$HOME/inst/instantclient_11_2
 export TNS_ADMIN=$HOME/inst/instantclient_11_2
@@ -43,3 +36,7 @@ alias g="cd $NYTGO"
 
 # added by Anaconda 1.8.0 installer
 export PATH="/Users/bseitz/anaconda/bin:$PATH"
+
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
