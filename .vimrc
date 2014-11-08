@@ -48,6 +48,7 @@ syntax on
 autocmd BufWritePre *.go Fmt
 
 au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
+au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 " colorscheme autumn2
 " colorscheme elflord
 colorscheme solarized
