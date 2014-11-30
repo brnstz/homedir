@@ -7,7 +7,7 @@ export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/loca
 export GOPATH="$HOME/go"
 export MYGO="$GOPATH/src/github.com/brnstz"
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$GOPATH/bin:$HOME/bin:$PATH"
 
 export GOMAXPROCS=10
 export LESS="-RX"
