@@ -24,10 +24,8 @@ set backspace=indent,eol,start
 set ruler
 set t_Co=256
 syntax on
+filetype plugin indent on
 
-au BufNewFile,BufRead *.in set filetype=javascript
-au BufNewFile,BufRead *.ctxlib set filetype=javascript
-au BufNewFile,BufRead *.ctp set filetype=php
 set background=dark
 "set background=light
 set encoding=utf8
@@ -40,15 +38,19 @@ set encoding=utf8
 "autocmd BufRead,BufNewFile *.go set filetype=go | setlocal noexpandtab 
 
 " Go stuff
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
-autocmd BufWritePre *.go Fmt
+" filetype off
+" filetype plugin indent off
+" set runtimepath+=$GOROOT/misc/vim
+" filetype plugin indent on
+" syntax on
+" autocmd BufWritePre *.go Fmt
 
 au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 " colorscheme autumn2
 " colorscheme elflord
 colorscheme solarized
+
+execute pathogen#infect()
+Helptags
+let g:go_fmt_command = "goimports"
