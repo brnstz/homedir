@@ -5,13 +5,9 @@ export EDITOR="vim"
 export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export GOPATH="$HOME/go"
-export NYTGO="$GOPATH/src/github.com/nytm"
+export MYGO="$GOPATH/src/github.com/brnstz"
 
 export PATH="$HOME/bin:$PATH"
-
-export DYLD_LIBRARY_PATH=$HOME/inst/instantclient_11_2
-export TNS_ADMIN=$HOME/inst/instantclient_11_2
-export PATH="$HOME/inst/instantclient_11_2:$PATH"
 
 export GOMAXPROCS=10
 export LESS="-RX"
@@ -33,7 +29,7 @@ alias rpmfu='sudo rpm -ivh --replacepkgs --replacefiles'
 alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
 alias nb='ipython notebook --pylab inline'
-alias g="cd $NYTGO"
+alias g="cd $MYGO"
 
 # added by Anaconda 1.8.0 installer
 export PATH="/Users/bseitz/anaconda/bin:$PATH"
