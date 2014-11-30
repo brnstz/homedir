@@ -3,6 +3,6 @@ homedir
 
 Home dir stuff
 
-For gocode to work, you'll need to manually run
+For vim-go stuff to work, you'll need:
 
-    go get -u github.com/nsf/gocode
+    https://github.com/fatih/vim-go
