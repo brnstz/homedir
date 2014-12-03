@@ -54,4 +54,3 @@ colorscheme solarized
 execute pathogen#infect()
 Helptags
 let g:go_fmt_command = "goimports"
-let g:godef_split=2
