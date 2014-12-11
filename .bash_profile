@@ -6,6 +6,7 @@ export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/loca
 
 export GOPATH="$HOME/go"
 export MYGO="$GOPATH/src/github.com/brnstz"
+export ENIGMAGO="$GOPATH/src/github.com/bibliotech"
 
 export PATH="$GOPATH/bin:$HOME/bin:$PATH"
 
@@ -30,10 +31,15 @@ alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
-
-# added by Anaconda 1.8.0 installer
-export PATH="/Users/bseitz/anaconda/bin:$PATH"
+alias e="cd $ENIGMAGO"
 
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
+
+export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
+export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
+export AWS_SECRET_ACCESS_KEY=`cat $HOME/.aws_secret_access_key`
+export AWS_DEFAULT_REGION='us-east-1'
+export AWS_ACCESS_KEY=$AWS_ACCESS_KEY_ID
+export AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
