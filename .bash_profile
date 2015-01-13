@@ -32,10 +32,12 @@ alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
 alias e="cd $ENIGMAGO"
+alias instances='aws ec2 describe-instances --filters Name=key-name,Values=bseitz'
+alias curlproxy="curl --proxy socks5h://localhost:8001"
 
-export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
+export DOCKER_CERT_PATH=/Users/bseitz/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
 export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
@@ -43,3 +45,5 @@ export AWS_SECRET_ACCESS_KEY=`cat $HOME/.aws_secret_access_key`
 export AWS_DEFAULT_REGION='us-east-1'
 export AWS_ACCESS_KEY=$AWS_ACCESS_KEY_ID
 export AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
+
+export CLICOLOR=1
