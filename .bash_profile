@@ -32,10 +32,6 @@ alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
 alias e="cd $ENIGMAGO"
-<<<<<<< HEAD
-
-# added by Anaconda 1.8.0 installer
-#export PATH="/Users/bseitz/anaconda/bin:$PATH"
 
 export DOCKER_TLS_VERIFY=1
 alias instances='aws ec2 describe-instances --filters Name=key-name,Values=bseitz'
