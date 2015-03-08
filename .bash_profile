@@ -41,11 +41,14 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/bseitz/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
-export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
-export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
-export AWS_SECRET_ACCESS_KEY=`cat $HOME/.aws_secret_access_key`
-export AWS_DEFAULT_REGION='us-east-1'
-export AWS_ACCESS_KEY=$AWS_ACCESS_KEY_ID
-export AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
+#export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
+#export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
+#export AWS_SECRET_ACCESS_KEY=`cat $HOME/.aws_secret_access_key`
+#export AWS_DEFAULT_REGION='us-east-1'
+#export AWS_ACCESS_KEY=$AWS_ACCESS_KEY_ID
+#export AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
 
 export CLICOLOR=1
+
+export MTA_SUBWAY_TIME_API_KEY=`cat $HOME/.mta_subway_time_api_key`
+export MTA_BUS_TIME_API_KEY=`cat $HOME/.mta_bus_time_api_key`
