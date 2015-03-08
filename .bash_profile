@@ -6,6 +6,7 @@ export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/loca
 
 export GOPATH="$HOME/go"
 export MYGO="$GOPATH/src/github.com/brnstz"
+export ENIGMAGO="$GOPATH/src/github.com/bibliotech"
 
 export PATH="$GOPATH/bin:$HOME/bin:$PATH"
 
@@ -30,9 +31,10 @@ alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
+alias e="cd $ENIGMAGO"
 
 # added by Anaconda 1.8.0 installer
-export PATH="/Users/bseitz/anaconda/bin:$PATH"
+#export PATH="/Users/bseitz/anaconda/bin:$PATH"
 
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
