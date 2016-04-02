@@ -18,4 +18,6 @@ $ git pull origin master
 $ mkdir -p ~/.vim/bundle
 $ git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
+# Copy the iterm2 file over 
+cp Library/Preferences/com.googlecode.iterm2.plist-initial Library/Preferences/com.googlecode.iterm2.plist
 ```
