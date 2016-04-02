@@ -6,11 +6,9 @@ export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/loca
 
 export GOPATH="$HOME/go"
 export MYGO="$GOPATH/src/github.com/brnstz"
-export ENIGMAGO="$GOPATH/src/github.com/bibliotech"
 
 export PATH="$GOPATH/bin:$HOME/bin:$PATH"
 
-export GOMAXPROCS=10
 export LESS="-RX"
 
 alias ack='ack -i --follow --ignore-dir=dist --ignore-dir=bower_components --ignore-dir=node_modules'
@@ -31,15 +29,11 @@ alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
-alias e="cd $ENIGMAGO"
+alias encrypt="ansible-vault encrypt --vault-password-file=~/.pwd"
+alias decrypt="ansible-vault decrypt --vault-password-file=~/.pwd"
 
-export DOCKER_TLS_VERIFY=1
 alias instances='aws ec2 describe-instances --filters Name=key-name,Values=bseitz'
 alias curlproxy="curl --proxy socks5h://localhost:8001"
-
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/bseitz/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
 
 #export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
 #export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
