@@ -5,7 +5,7 @@ Home dir stuff
 
 ```bash
 # You can't clone into a non-empty directory. Instead, initialize
-# an empty git repo and set this as master.
+# an empty git repo and set this as origin
 $ cd ~
 $ git init .
 $ git remote add origin git@github.com:brnstz/homedir.git
