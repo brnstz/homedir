@@ -2,7 +2,7 @@ umask 002
 export PS1="\u@\h:\w$ "
 export PAGER="less"
 export EDITOR="vim"
-export PATH="/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 export GOPATH="$HOME/go"
 export MYGO="$GOPATH/src/github.com/brnstz"
