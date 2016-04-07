@@ -42,5 +42,12 @@ export AWS_DEFAULT_REGION='us-east-1'
 
 export CLICOLOR=1
 
-export MTA_SUBWAY_TIME_API_KEY=`cat $HOME/.mta_subway_time_api_key`
-export MTA_BUS_TIME_API_KEY=`cat $HOME/.mta_bus_time_api_key`
+export BUS_MTA_DATAMINE_API_KEY=`cat $HOME/.mta_subway_time_api_key`
+export BUS_MTA_BUSTIME_API_KEY=`cat $HOME/.mta_bus_time_api_key`
+export BUS_DB_USER="bseitz"
+export BUS_DB_NAME="bseitz"
+export BUS_API_ADDR="0.0.0.0:8000"
+
+export BUS_LOAD_FOREVER="false" 
+export BUS_GTFS_URLS="http://web.mta.info/developers/data/nyct/subway/google_transit.zip" 
+export BUS_ROUTE_FILTER="G,L"

@@ -47,6 +47,7 @@ set encoding=utf8
 
 au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/syntax/yaml.vim
 " colorscheme autumn2
 " colorscheme elflord
 colorscheme solarized
