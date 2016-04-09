@@ -11,9 +11,13 @@ $ git init .
 $ git remote add origin git@github.com:brnstz/homedir.git
 $ git pull origin master
 
-# For vim-go stuff to work, you'll need: https://github.com/fatih/vim-go
+# Some vim bundle dependencies:
+# https://github.com/fatih/vim-go
+# https://github.com/chase/vim-ansible-yaml
 $ mkdir -p ~/.vim/bundle
 $ git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+$ git clone https://github.com/chase/vim-ansible-yaml.git ~/.vim/bundle/vim-ansible-yaml
+
 
 # Copy the iterm2 file over 
 $ cp Library/Preferences/com.googlecode.iterm2.plist-initial Library/Preferences/com.googlecode.iterm2.plist
