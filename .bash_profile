@@ -54,3 +54,10 @@ export BUS_LOAD_FOREVER="false"
 export BUS_GTFS_URLS="http://web.mta.info/developers/data/nyct/subway/google_transit.zip,http://web.mta.info/developers/data/nyct/bus/google_transit_brooklyn.zip" 
 export BUS_ROUTE_FILTER="G,L,B62,B32,B43"
 export WORKON_HOME=~/envs
+venvwrap="virtualenvwrapper.sh"
+/usr/bin/which -s $venvwrap
+if [ $? -eq 0 ]; then
+    venvwrap=`/usr/bin/which $venvwrap`
+    source $venvwrap
+fi
+
