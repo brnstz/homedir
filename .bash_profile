@@ -1,7 +1,6 @@
 umask 002
 #export PS1="\u@\h:\w$ "
-export PS1="\e[33m\D{%T} \e[39m\u \e[31m\w\e[39m: "
-export PAGER="less"
+export PS1="\[\e[33m\]\D{%T} \[\e[39m\]\u \[\e[31m\]\w\[\e[39m\]: " export PAGER="less"
 export EDITOR="vim"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/mongodb/bin:$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
