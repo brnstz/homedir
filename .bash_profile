@@ -30,7 +30,7 @@ alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
 alias r="cd ~/git/mono"
-alias s="cd ~/git/pro_soda"
+alias s="workon pro_soda && cd ~/git/pro_soda"
 alias encrypt="ansible-vault encrypt --vault-password-file=~/.pwd"
 alias decrypt="ansible-vault decrypt --vault-password-file=~/.pwd"
 
@@ -60,4 +60,17 @@ if [ $? -eq 0 ]; then
     venvwrap=`/usr/bin/which $venvwrap`
     source $venvwrap
 fi
+export ML_API_KEY=`cat $HOME/.ml_api_key`
+export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
+alias mkvirtualenv="mkvirtualenv -p /usr/local/bin/python"
 
+# Stolen from: https://justin.abrah.ms/dotfiles/zsh.html#sec-2-7
+# If there is a .venv file, run "workon <contents of that file>"
+PROMPT_COMMAND='prompt'
+function prompt()
+{
+    if [ "$PWD" != "$MYOLDPWD" ]; then
+        MYOLDPWD="$PWD"
+        test -e .venv && workon `cat .venv`
+    fi
+}

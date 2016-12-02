@@ -56,3 +56,4 @@ colorscheme solarized
 execute pathogen#infect()
 Helptags
 let g:go_fmt_command = "goimports"
+nnoremap gd :YcmCompleter GoTo<CR>
