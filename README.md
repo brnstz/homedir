@@ -18,7 +18,9 @@ $ mkdir -p ~/.vim/bundle
 $ git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 $ git clone https://github.com/chase/vim-ansible-yaml.git ~/.vim/bundle/vim-ansible-yaml
 $ git clone https://github.com/maksimr/vim-jsbeautify.git ~/.vim/bundle/vim-jsbeautify
-$ cd vim-jsbeautify && git submodule update --init --recursive
+$ git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+$ cd ~/.vim/bundle/vim-jsbeautify && git submodule update --init --recursive
+$ cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.py --clang-completer
 
 # Copy the iterm2 file over 
 $ cp Library/Preferences/com.googlecode.iterm2.plist-initial Library/Preferences/com.googlecode.iterm2.plist
