@@ -57,3 +57,5 @@ execute pathogen#infect()
 Helptags
 let g:go_fmt_command = "goimports"
 nnoremap gd :YcmCompleter GoTo<CR>
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+set hlsearch
