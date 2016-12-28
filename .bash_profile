@@ -74,3 +74,4 @@ function prompt()
         test -e .venv && workon `cat .venv`
     fi
 }
+export DAGGER_ENVIRONMENT=dev
