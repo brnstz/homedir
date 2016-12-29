@@ -29,13 +29,16 @@ alias rpmpush='rhnpush -v --nosig  -c centos5-paperboy-dev-x86'
 alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
-alias r="cd ~/git/mono"
 alias s="workon pro_soda && cd ~/git/pro_soda"
+alias c="cd ~/Dropbox/interview/crack"
+alias b="cd ~/Dropbox/blog"
+alias r="cd ~/git/mono"
 alias encrypt="ansible-vault encrypt --vault-password-file=~/.pwd"
 alias decrypt="ansible-vault decrypt --vault-password-file=~/.pwd"
 
 alias instances='aws ec2 describe-instances --filters Name=key-name,Values=bseitz'
 alias curlproxy="curl --proxy socks5h://localhost:8001"
+alias python="python3"
 
 #export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
 #export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
@@ -44,8 +47,12 @@ export AWS_DEFAULT_REGION='us-east-1'
 
 export CLICOLOR=1
 
-#export BUS_MTA_DATAMINE_API_KEY=`cat $HOME/.mta_subway_time_api_key`
-#export BUS_MTA_BUSTIME_API_KEY=`cat $HOME/.mta_bus_time_api_key`
+export BUS_MTA_DATAMINE_API_KEY=`cat $HOME/.mta_subway_time_api_key`
+export BUS_MTA_BUSTIME_API_KEY=`cat $HOME/.mta_bus_time_api_key`
+export BUS_NJTRANSIT_FEED_USERNAME="brnstz"
+export BUS_NJTRANSIT_FEED_PASSWORD=`cat $HOME/.njtransit_feed_password`
+export BUS_NJTRANSIT_LIVE_USERNAME="brnstz"
+export BUS_NJTRANSIT_LIVE_PASSWORD=`cat $HOME/.njtransit_live_password`
 export BUS_DB_USER="bseitz"
 export BUS_DB_NAME="bseitz"
 export BUS_API_ADDR="0.0.0.0:8000"
@@ -75,3 +82,5 @@ function prompt()
     fi
 }
 export DAGGER_ENVIRONMENT=dev
+export BUS_GTFS_URLS="http://web.mta.info/developers/data/nyct/subway/google_transit.zip"
+export BUS_LOG_TIMING=true

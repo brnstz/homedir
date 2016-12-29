@@ -48,7 +48,7 @@ set encoding=utf8
 au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 au BufWritePre *.{js} :call JsBeautify()
-" au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/syntax/yaml.vim
+au BufNewFile,BufRead *.yaml,*.yml set filetype=ansible
 " colorscheme autumn2
 " colorscheme elflord
 colorscheme solarized
@@ -60,3 +60,4 @@ nnoremap gd :YcmCompleter GoTo<CR>
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 set hlsearch
 autocmd BufWritePost *.py call Flake8()
+let g:ycm_filetype_blacklist = { "go": 1, "text": 1 }
