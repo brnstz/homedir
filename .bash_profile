@@ -68,6 +68,7 @@ if [ $? -eq 0 ]; then
     source $venvwrap
 fi
 export ML_API_KEY=`cat $HOME/.ml_api_key`
+export FB_ACCESS_TOKEN=`cat $HOME/.fb_access_token`
 export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
 alias mkvirtualenv="mkvirtualenv -p /usr/local/bin/python"
 
