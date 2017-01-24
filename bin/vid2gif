@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$#" -ne 4 ]; then
+    echo "Usage $0 <input file> <fps> <scale> <output file>"
+	exit 1
+fi
+
+tmpf=`mktemp`.png
+
+ffmpeg -y -i $1 -vf fps=$2,scale=$3:-1:flags=lanczos,palettegen $tmpf
+ffmpeg -i $1 -i $tmpf -filter_complex "fps=$2,scale=$3:-1:flags=lanczos[x];[x][1:v]paletteuse" $4
+
+rm $tmpf
