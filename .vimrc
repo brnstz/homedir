@@ -60,4 +60,5 @@ nnoremap gd :YcmCompleter GoTo<CR>
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 set hlsearch
 autocmd BufWritePost *.py call Flake8()
-let g:ycm_filetype_blacklist = { "go": 1, "text": 1 }
+let g:ycm_filetype_blacklist = { "go": 1, "text": 1, "sh": 1 }
+autocmd filetype crontab setlocal nobackup nowritebackup
