@@ -85,3 +85,5 @@ function prompt()
 export DAGGER_ENVIRONMENT=dev
 export BUS_GTFS_URLS="http://web.mta.info/developers/data/nyct/subway/google_transit.zip"
 export BUS_LOG_TIMING=true
+export API_GATEWAY_TOKEN_STAGE=`cat $HOME/.api_gateway_token_stage`
+export API_GATEWAY_TOKEN_PROD=`cat $HOME/.api_gateway_token_prod`
