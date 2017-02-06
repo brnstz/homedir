@@ -81,6 +81,10 @@ function prompt()
         MYOLDPWD="$PWD"
         test -e .venv && workon `cat .venv`
     fi
+
+    if [[ "$PWD" =~ ^$HOME/git/mono/ ]]; then
+        export PYTHONPATH=`pwd | cut -f1-6 -d\/`
+    fi
 }
 export DAGGER_ENVIRONMENT=dev
 export BUS_GTFS_URLS="http://web.mta.info/developers/data/nyct/subway/google_transit.zip"
