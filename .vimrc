@@ -52,13 +52,20 @@ au BufNewFile,BufRead *.yaml,*.yml set filetype=ansible
 " colorscheme autumn2
 " colorscheme elflord
 colorscheme solarized
+set hlsearch
 
 execute pathogen#infect()
-Helptags
 let g:go_fmt_command = "goimports"
-nnoremap gd :YcmCompleter GoTo<CR>
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-set hlsearch
-autocmd BufWritePost *.py call Flake8()
+
+" you complete me
+nnoremap gd :YcmCompleter GoTo<CR>
 let g:ycm_filetype_blacklist = { "go": 1, "text": 1, "sh": 1 }
+
+" weird mac cron thing
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+" flake8
+autocmd BufWritePost *.py call Flake8()
+let g:flake8_cmd="$HOME/bin/flake82" " python2
+" let g:flake8_cmd="$HOME/bin/flake83" " python3
