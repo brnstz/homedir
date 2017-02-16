@@ -67,5 +67,5 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 
 " flake8
 autocmd BufWritePost *.py call Flake8()
-let g:flake8_cmd="$HOME/bin/flake82" " python2
-" let g:flake8_cmd="$HOME/bin/flake83" " python3
+let g:flake8_cmd=$HOME."/bin/flake82" " python2
+" let g:flake8_cmd=$HOME."/bin/flake83" " python3
