@@ -30,7 +30,6 @@ alias vi='vim'
 alias nb='ipython notebook --pylab inline'
 alias g="cd $MYGO"
 alias s="workon pro_soda && cd ~/git/pro_soda"
-alias c="cd ~/Dropbox/interview/crack"
 alias b="cd ~/Dropbox/blog"
 alias r="cd ~/git/mono"
 alias encrypt="ansible-vault encrypt --vault-password-file=~/.pwd"
