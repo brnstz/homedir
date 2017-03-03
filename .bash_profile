@@ -37,7 +37,6 @@ alias decrypt="ansible-vault decrypt --vault-password-file=~/.pwd"
 
 alias instances='aws ec2 describe-instances --filters Name=key-name,Values=bseitz'
 alias curlproxy="curl --proxy socks5h://localhost:8001"
-alias python="python3"
 
 #export HOMEBREW_GITHUB_API_TOKEN=`cat $HOME/.homebrew_github_api_token`
 #export AWS_ACCESS_KEY_ID=`cat $HOME/.aws_access_key_id`
