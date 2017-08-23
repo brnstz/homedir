@@ -82,6 +82,7 @@ function prompt()
 
     if [[ "$PWD" =~ ^$HOME/git/mono/ ]]; then
         export PYTHONPATH=`pwd | cut -f1-6 -d\/`
+        export PYTHONPATH="$PYTHONPATH:$HOME/git/mono/packages/python"
     fi
 }
 export DAGGER_ENVIRONMENT=dev
@@ -91,3 +92,5 @@ export API_GATEWAY_TOKEN_STAGE=`cat $HOME/.api_gateway_token_stage`
 export API_GATEWAY_TOKEN_PROD=`cat $HOME/.api_gateway_token_prod`
 export PROSODA_TOKEN_STAGE=`cat $HOME/.prosoda_token_stage`
 export PROSODA_TOKEN_DEV=`cat $HOME/.prosoda_token_dev`
+export CASINO_API_GATEWAY_TOKEN_STAGE=`cat $HOME/.casino_api_gateway_token_stage`
+eval "$(direnv hook bash)"

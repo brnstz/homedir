@@ -47,11 +47,11 @@ set encoding=utf8
 
 au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
-au BufWritePre *.{js} :call JsBeautify()
+" au BufWritePre *.{js} :call JsBeautify()
 au BufNewFile,BufRead *.yaml,*.yml set filetype=ansible
 " colorscheme autumn2
 " colorscheme elflord
-colorscheme solarized
+" colorscheme solarized
 set hlsearch
 
 execute pathogen#infect()
@@ -67,5 +67,5 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 
 " flake8
 autocmd BufWritePost *.py call Flake8()
-let g:flake8_cmd=$HOME."/bin/flake82" " python2
-" let g:flake8_cmd=$HOME."/bin/flake83" " python3
+" let g:flake8_cmd=$HOME."/bin/flake82" " python2
+let g:flake8_cmd=$HOME."/bin/flake83" " python3
