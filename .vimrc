@@ -26,8 +26,8 @@ set t_Co=256
 syntax on
 filetype plugin indent on
 
-set background=dark
-"set background=light
+" set background=dark
+set background=light
 set encoding=utf8
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let g:SuperTabDefaultCompletionType = "context"
@@ -51,7 +51,7 @@ au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 au BufNewFile,BufRead *.yaml,*.yml set filetype=ansible
 " colorscheme autumn2
 " colorscheme elflord
-" colorscheme solarized
+colorscheme solarized
 set hlsearch
 
 execute pathogen#infect()
