@@ -26,8 +26,8 @@ set t_Co=256
 syntax on
 filetype plugin indent on
 
-" set background=dark
-set background=light
+set background=dark
+" set background=light
 set encoding=utf8
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let g:SuperTabDefaultCompletionType = "context"
