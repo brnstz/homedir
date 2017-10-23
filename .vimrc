@@ -44,6 +44,8 @@ set encoding=utf8
 " filetype plugin indent on
 " syntax on
 " autocmd BufWritePre *.go Fmt
+"
+let g:go_metalinter_autosave = 1
 
 au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 au BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
